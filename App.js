@@ -1,24 +1,22 @@
-import React, {Component} from 'react';
-import {View, Text, StyleSheet} from 'react-native';
+import React from 'react';
+import {
+  SafeAreaView,
+  StyleSheet,
+  ScrollView,
+  View,
+  Text,
+  StatusBar,
+} from 'react-native';
 
-export default class appLar extends Component {
-  render() {
-    return(
-      <View style={styles.container}>
-        <Text style={styles.title}>Hello World</Text>
-      </View>
-    );
-  }
-}
+import Login from './src/pages/Login';
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center'
-  },
-  title: {
-    fontSize: 20,
-    fontWeight: 'bold'
-  }
-});
+
+const App: () => React$Node = () => {
+  return (
+    <>
+      <Login />
+    </>
+  );
+};
+
+export default App;

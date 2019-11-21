@@ -1,4 +1,4 @@
-package com.lareceita;
+package com.applar;
 
 import android.app.Application;
 import android.content.Context;

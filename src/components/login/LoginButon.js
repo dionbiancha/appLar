@@ -3,21 +3,25 @@ import {
     View, 
     StyleSheet,
     TouchableOpacity,
-    Text 
+    Text ,
+    Image
 } from 'react-native';
 
-export default class LoginButton extends Component {
 
+export default class LoginButton extends Component {
   render () {
     return (
       <View style={styles.loginArea}>
         <Text style={styles.textLogin}>Para acessar é necessario estar logado</Text>
           <TouchableOpacity style={[styles.button, {backgroundColor: '#355495'}]}>
+            <Image source={require('./icons/iconFacebook.png')} style={styles.image}/>
             <Text style={styles.textButton}>Entrar com o Facebook</Text>
           </TouchableOpacity>
-          <TouchableOpacity style={[styles.button, {backgroundColor: '#D84736'}]}>
+          <TouchableOpacity style={[styles.button, {backgroundColor: '#D74635'}]}>
+            <Image source={require('./icons/iconGoogle.png')} style={styles.image} />
             <Text style={styles.textButton}>Entrar com o Google</Text>
           </TouchableOpacity>
+          
       </View>
     );
   }
@@ -36,16 +40,22 @@ const styles = StyleSheet.create({
     button: {
       flex: 1,
       flexDirection: 'row',
-      justifyContent: 'center',
       alignItems: 'center',
       height: 50,
       borderRadius: 5,
       margin: 5
     },
+    image: {
+      position: 'absolute',
+      width: 25,
+      height: 25
+
+    },
     textButton: {
-      color: '#FFFFFF',
+      flex: 1,
+      justifyContent: 'center',
       textAlign: 'center',
-      fontWeight: 'bold',
-      textAlignVertical: 'center'
+      color: '#FFFFFF',
+      fontWeight: 'bold'
     }
 });

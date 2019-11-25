@@ -1,0 +1,38 @@
+{
+    "features": [{
+    "type": "Feature",
+    "properties": {
+        "ID": 0,
+        "NAME": "Receitas",
+        "INFO": "Descubra um novo mundo de receitas elaboradas com toda a linha de alimentos Lar",
+        "IMG": "../img/recipe.png"
+    }
+    },
+    {
+    "type": "Feature",
+    "properties": {
+        "ID": 1,
+        "NAME": "Código de Barras",
+        "INFO": "Associe receitas aos produtos rapidamente através do leitor de codigo de barras.",
+        "IMG": "./img/barcode.png"
+    }
+    },
+    {
+    "type": "Feature",
+    "properties": {
+        "ID": 2,
+        "NAME": "Medida Exata",
+        "INFO": "Almoço em familia? Churrasco? Não importa pois é possivel calcular a proporção certa para ninguém passar vontade!",
+        "IMG": "./img/family.png"
+    }
+    },
+    {
+    "type": "Feature",
+    "properties": {
+        "ID": 3,
+        "NAME": "Tabela Nutricional",
+        "INFO": "Tabela nutricional organizada de maneira que facilite a compreensão.",
+        "IMG": "./img/heart.png"
+    }
+    }]
+}

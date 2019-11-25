@@ -1,0 +1,48 @@
+{
+    "features": [{
+        "type": "Feature",
+        "colors": [{
+                "COLOR": "#757575"
+            },{
+                "COLOR": "#CECECE"
+            },{
+                "COLOR": "#CECECE"
+            },{
+                "COLOR": "#CECECE"
+            }]
+        },{
+        "type": "Feature",
+        "colors": [{
+                "COLOR": "#CECECE"
+            },{
+                "COLOR": "#757575"
+            },{
+                "COLOR": "#CECECE"
+            },{
+                "COLOR": "#CECECE"
+            }]
+        },{
+            "type": "Feature",
+            "colors": [{
+                    "COLOR": "#CECECE"
+                },{
+                    "COLOR": "#CECECE"
+                },{
+                    "COLOR": "#757575"
+                },{
+                    "COLOR": "#CECECE"
+                }]
+        },{
+            "type": "Feature",
+            "colors": [{
+                    "COLOR": "#CECECE"
+                },{
+                    "COLOR": "#CECECE"
+                },{
+                    "COLOR": "#CECECE"
+                },{
+                    "COLOR": "#757575"
+                }]
+        }
+    ]
+}

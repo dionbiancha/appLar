@@ -1,21 +1,8 @@
-import { createAppContainer } from 'react-navigation';
-import { createStackNavigator } from 'react-navigation-stack';
+import React from 'react';
 
-import Login from './src/pages/Login';
-import Tutorial from './src/pages/Tutorial';
+import StackNavigator from './src/routes/stackNavigator';
 
-const App = createAppContainer(
-  createStackNavigator({
-    Login: {
-      screen: Login,
-      navigationOptions: {header: null}
-    },
-    Tutorial: {
-      screen: Tutorial,
-      navigationOptions: {header: null}
-    }
-  })
-);
+const App = () => <StackNavigator />
 
 export default App; 
 

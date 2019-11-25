@@ -9,6 +9,7 @@ import {
 
 
 export default class Login extends Component {
+
   render () {
     return (
       <View style={styles.container}>
@@ -22,11 +23,13 @@ export default class Login extends Component {
         </View>
         <View style={styles.loginArea}>
           <Text style={styles.textLogin}>Para acessar é necessario estar logado</Text>
-            <TouchableOpacity style={[styles.button, {backgroundColor: '#355495'}]}>
+            <TouchableOpacity style={[styles.button, {backgroundColor: '#355495'}]}
+            onPress={()=>{this.props.navigation.navigate('Tutorial')}}>
               <Image source={require('../icons/iconFacebook.png')} style={styles.icon}/>
               <Text style={styles.textButton}>Entrar com o Facebook</Text>
             </TouchableOpacity>
-            <TouchableOpacity style={[styles.button, {backgroundColor: '#D74635'}]}>
+            <TouchableOpacity style={[styles.button, {backgroundColor: '#D74635'}]}
+            onPress={()=>{this.props.navigation.navigate('Tutorial')}}>
               <Image source={require('../icons/iconGoogle.png')} style={styles.icon} />
               <Text style={styles.textButton}>Entrar com o Google</Text>
           </TouchableOpacity>

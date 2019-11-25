@@ -26,8 +26,14 @@ class Tutorial extends React.Component {
   } 
   nextTutorial() {
     let s = this.state;
-    s.key = s.key + 1;
-    this.setState(s);
+    if(s.key == 3){
+      this.props.navigation.navigate('TabNavigator');
+    }
+    else {
+      s.key = s.key + 1;
+      this.setState(s);
+    }
+    
   }
   render() {
     return (

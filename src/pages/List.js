@@ -6,16 +6,16 @@ import {
     StyleSheet
 } from 'react-native';
 
-export default class Recipe extends Component {
+export default class List extends Component {
     static navigationOptions = {
 		tabBarIcon: ({ focused, tintColor }) => {
 		    if (focused) {
 		        return (
-		            <Image source={require('../icons/recipeIconRed.png')} style={styles.IconImage} />
+		            <Image source={require('../icons/listIconRed.png')} style={styles.IconImage} />
 		        );
 		    } else {
 		        return (
-		            <Image source={require('../icons/recipeIcon.png')} style={styles.IconImage} />
+		            <Image source={require('../icons/listIcon.png')} style={styles.IconImage} />
 		        );
 		    }
 		}
@@ -23,7 +23,7 @@ export default class Recipe extends Component {
     render(){
         return(
             <View>
-                <Text>Recipe</Text>
+                <Text>List</Text>
             </View>
         );
     }

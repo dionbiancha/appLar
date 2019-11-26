@@ -6,7 +6,9 @@ import {
     StyleSheet
 } from 'react-native';
 
-import TopMain from '../components/fields/topMain';
+import TopMain from '../components/header/topMain';
+import HeaderCategory from '../components/header/headerCategory';
+import Icons from '../components/header/headerCategoryIcon';
 
 export default class Recipe extends Component {
     static navigationOptions = {
@@ -26,7 +28,15 @@ export default class Recipe extends Component {
         return(
             <View style={styles.container}>
                 <TopMain name=""/>
-
+				<View style={styles.products}>
+					<HeaderCategory id="2" image={Icons[2]}/>
+				</View>
+				<View style={styles.churascometro}>
+					<HeaderCategory id="3" image={Icons[3]}/>
+				</View>
+				<View style={styles.churascometro}>
+					<HeaderCategory id="4" image={Icons[4]}/>
+				</View>
             </View>
         );
     }
@@ -41,5 +51,11 @@ const styles = StyleSheet.create({
 		flex: 1,
 		flexDirection: 'column',
 		margin: 10
+	},
+	products: {
+		flex: 1
+	},
+	churascometro: {
+		flex: 1
 	}
 });

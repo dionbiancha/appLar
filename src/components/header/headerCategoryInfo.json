@@ -1,0 +1,47 @@
+{
+    "features": [{
+    "type": "Feature",
+    "properties": {
+        "ID": 0,
+        "NAME": "Produtos",
+        "INFO": "Linha de produtos",
+        "COLOR": "#FCEB91"
+    }
+    },
+    {
+    "type": "Feature",
+    "properties": {
+        "ID": 1,
+        "NAME": "Churrascomêtro",
+        "INFO": "Calcule seu churrasco",
+        "COLOR": "#FC9191"
+    }
+    },
+    {
+    "type": "Feature",
+    "properties": {
+        "ID": 2,
+        "NAME": "Dica do Chef",
+        "INFO": "Receita da semana",
+        "COLOR": "#7FBCFF"
+    }
+    },
+    {
+    "type": "Feature",
+    "properties": {
+        "ID": 3,
+        "NAME": "Personalizado",
+        "INFO": "Receitas de acordo com sua lista",
+        "COLOR": "#FCEB91"
+    }
+    },
+    {
+    "type": "Feature",
+    "properties": {
+        "ID": 3,
+        "NAME": "Categorias",
+        "INFO": "",
+        "COLOR": "#97FC91"
+    }
+    }]
+}

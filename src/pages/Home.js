@@ -1,14 +1,16 @@
 import React, {Component} from 'react';
 import {
     View,
-    Text,
     Image,
     StyleSheet
 } from 'react-native';
 
-import TopMain from '../components/fields/topMain';
-import HeaderCategory from '../components/fields/headerCategory';
-import Icons from '../components/fields/headerCategoryIcon';
+import TopMain from '../components/header/topMain';
+import HeaderCategory from '../components/header/headerCategory';
+import Icons from '../components/header/headerCategoryIcon';
+
+import Category from '../components/field/category';
+import IconsCategory from '../components/field/categoryIcon';
 
 export default class Home extends Component {
 	constructor(props) {
@@ -36,6 +38,14 @@ export default class Home extends Component {
                 <TopMain name={"Bem Vindo "+this.state.name}/>
 				<View style={styles.products}>
 					<HeaderCategory id="0" image={Icons[0]}/>
+						<View style={styles.category}>
+							<Category id="0" img={IconsCategory[0]}/>
+							<Category id="1" img={IconsCategory[1]}/>
+						</View>
+						<View style={styles.category}>
+							<Category id="2" img={IconsCategory[2]}/>
+							<Category id="3" img={IconsCategory[3]}/>
+						</View>
 				</View>
 				<View style={styles.churascometro}>
 					<HeaderCategory id="1" image={Icons[1]}/>
@@ -59,5 +69,9 @@ const styles = StyleSheet.create({
 	},
 	churascometro: {
 		flex: 1
+	},
+	category: {
+		flexDirection: 'row',
+		justifyContent: 'space-between'
 	}
 });

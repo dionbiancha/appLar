@@ -1,0 +1,30 @@
+{
+    "features": [{
+    "type": "Feature",
+    "properties": {
+        "ID": 0,
+        "COLOR": "#FC9191"
+    }
+    },
+    {
+    "type": "Feature",
+    "properties": {
+        "ID": 1,
+        "COLOR": "#B9B9B9"
+    }
+    },
+    {
+    "type": "Feature",
+    "properties": {
+        "ID": 2,
+        "COLOR": "#97FC91"
+    }
+    },
+    {
+    "type": "Feature",
+    "properties": {
+        "ID": 3,
+        "COLOR": "#FCEB91"
+    }
+    }]
+}

@@ -6,6 +6,8 @@ import {
     StyleSheet
 } from 'react-native';
 
+import TopMain from '../components/fields/topMain';
+
 export default class Recipe extends Component {
     static navigationOptions = {
 		tabBarIcon: ({ focused, tintColor }) => {
@@ -22,8 +24,9 @@ export default class Recipe extends Component {
 	}
     render(){
         return(
-            <View>
-                <Text>Recipe</Text>
+            <View style={styles.container}>
+                <TopMain name=""/>
+
             </View>
         );
     }
@@ -33,5 +36,10 @@ const styles = StyleSheet.create({
 	IconImage: {
 		width: 26,
 		height: 26
+	},
+	container: {
+		flex: 1,
+		flexDirection: 'column',
+		margin: 10
 	}
 });

@@ -6,7 +6,17 @@ import {
     StyleSheet
 } from 'react-native';
 
+import TopMain from '../components/fields/topMain';
+import HeaderCategory from '../components/fields/headerCategory';
+import Icons from '../components/fields/headerCategoryIcon';
+
 export default class Home extends Component {
+	constructor(props) {
+		super(props);
+		this.state = {
+			name: 'Dionei'
+		};
+	}
     static navigationOptions = {
 		tabBarIcon: ({ focused, tintColor }) => {
 		    if (focused) {
@@ -23,18 +33,12 @@ export default class Home extends Component {
     render(){
         return(
             <View style={styles.container}>
-                <View style={styles.top}>
-					<View style={styles.areaLogo}>
-						<Image style={styles.logo} source={require('../img/logo.png')}/>
-						<Text style={styles.title}>La Receita</Text>
-					</View>
-					<Text style={styles.text}>Bem vindo Irineu</Text>
-				</View>
+                <TopMain name={"Bem Vindo "+this.state.name}/>
 				<View style={styles.products}>
-
+					<HeaderCategory id="0" image={Icons[0]}/>
 				</View>
 				<View style={styles.churascometro}>
-
+					<HeaderCategory id="1" image={Icons[1]}/>
 				</View>
             </View>
         );
@@ -50,24 +54,10 @@ const styles = StyleSheet.create({
 		flexDirection: 'column',
 		margin: 10
 	},
-	top: {
-		flexDirection: 'row',
-		alignItems: 'center',
-		justifyContent: 'space-between'
+	products: {
+		flex: 1
 	},
-	areaLogo: {
-		flexDirection: 'row',
-		alignItems: 'center'
-	},
-	logo: {
-		width: 50,
-		height: 50
-	},
-	title: {
-		fontSize: 25,
-		fontWeight: 'bold',
-		color: '#FA2525'
-	},
-	text: {
+	churascometro: {
+		flex: 1
 	}
 });

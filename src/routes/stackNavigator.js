@@ -4,6 +4,7 @@ import { createStackNavigator } from 'react-navigation-stack';
 import Login from '../pages/Login';
 import Tutorial from '../pages/Tutorial';
 import TabNavigator from './tabNavigator';
+import Churrascometro from '../pages/churrascometro';
 
 const StackNavigator = createAppContainer(
   createStackNavigator({
@@ -18,7 +19,11 @@ const StackNavigator = createAppContainer(
     TabNavigator: {
       screen: TabNavigator,
       navigationOptions: {header: null}
-    }
+    },
+    Churrascometro: {
+      screen: Churrascometro,
+      navigationOptions: {header: false}
+    }  
   })
 );
 

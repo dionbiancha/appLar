@@ -38,19 +38,20 @@ const styles = StyleSheet.create({
 		flexDirection: 'column',
     },
     topProduct:{
-        flexDirection: 'row'
+        flexDirection: 'row',
+        alignItems: 'center'
     },
     areaIconTop: {
-        width: 50,
-        height: 50,
+        width: 40,
+        height: 40,
         borderRadius: 5,
         alignItems: 'center',
         justifyContent: 'center',
         marginRight: 10
     },
     IconTop: {
-        width: 30,
-        height: 30,
+        width: 25,
+        height: 25,
     },
     areaText: {
 

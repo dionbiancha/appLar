@@ -1,14 +1,20 @@
 import React, {Component} from 'react';
 import {
     View,
-    Text,
     Image,
-    StyleSheet
+	StyleSheet,
+	ScrollView
 } from 'react-native';
 
 import TopMain from '../components/header/topMain';
 import HeaderCategory from '../components/header/headerCategory';
 import Icons from '../components/header/headerCategoryIcon';
+
+import InputImage from '../components/field/Image/inputImage';
+import InputImg from '../components/field/Image/inputImg';
+
+import Category from '../components/field/category/category';
+import IconsCategory from '../components/field/category/categoryIcon';
 
 export default class Recipe extends Component {
     static navigationOptions = {
@@ -26,18 +32,31 @@ export default class Recipe extends Component {
 	}
     render(){
         return(
-            <View style={styles.container}>
-                <TopMain name=""/>
-				<View style={styles.products}>
-					<HeaderCategory id="2" image={Icons[2]}/>
+			<ScrollView>
+				<View style={styles.container}>
+					<TopMain name=""/>
+					<View style={styles.products}>
+						<HeaderCategory id="2" image={Icons[2]}/>
+						<InputImage inputImg={InputImg[1]}/>
+					</View>
+					<View style={styles.areaRecipe}>
+						<HeaderCategory id="3" image={Icons[3]}/>
+						<InputImage inputImg={InputImg[2]}/>
+					</View>
+					<View style={styles.areaRecipe}>
+						<HeaderCategory id="4" image={Icons[4]}/>
+						<View style={styles.category}>
+							<Category id="0" img={IconsCategory[0]}/>
+							<Category id="1" img={IconsCategory[1]}/>
+						</View>
+						<View style={styles.category}>
+							<Category id="2" img={IconsCategory[2]}/>
+							<Category id="3" img={IconsCategory[3]}/>
+						</View>
+					</View>
 				</View>
-				<View style={styles.churascometro}>
-					<HeaderCategory id="3" image={Icons[3]}/>
-				</View>
-				<View style={styles.churascometro}>
-					<HeaderCategory id="4" image={Icons[4]}/>
-				</View>
-            </View>
+			</ScrollView>
+			
         );
     }
 }
@@ -48,14 +67,18 @@ const styles = StyleSheet.create({
 		height: 26
 	},
 	container: {
-		flex: 1,
+		height: 780,
 		flexDirection: 'column',
 		margin: 10
 	},
 	products: {
 		flex: 1
 	},
-	churascometro: {
+	areaRecipe: {
 		flex: 1
+	},
+	category: {
+		flexDirection: 'row',
+		justifyContent: 'space-between'
 	}
 });

@@ -11,7 +11,7 @@ import HeaderCategory from '../components/header/headerCategory';
 import Icons from '../components/header/headerCategoryIcon';
 
 import InputImage from '../components/field/Image/inputImage';
-import InputImg from '../components/field/Image/inputImg';
+import {InputImg, Imagens} from '../components/field/Image/inputImg';
 
 import Category from '../components/field/category/category';
 import IconsCategory from '../components/field/category/categoryIcon';
@@ -37,11 +37,11 @@ export default class Recipe extends Component {
 					<TopMain name=""/>
 					<View style={styles.products}>
 						<HeaderCategory id="2" image={Icons[2]}/>
-						<InputImage inputImg={InputImg[1]}/>
+						<InputImage inputImg={Imagens.chef.url}/>
 					</View>
 					<View style={styles.areaRecipe}>
 						<HeaderCategory id="3" image={Icons[3]}/>
-						<InputImage inputImg={InputImg[2]}/>
+						<InputImage inputImg={Imagens.custom.url}/>
 					</View>
 					<View style={styles.areaRecipe}>
 						<HeaderCategory id="4" image={Icons[4]}/>

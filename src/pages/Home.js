@@ -13,7 +13,7 @@ import Category from '../components/field/category/category';
 import IconsCategory from '../components/field/category/categoryIcon';
 
 import InputImage from '../components/field/Image/inputImage';
-import InputImg from '../components/field/Image/inputImg';
+import {InputImg, Imagens} from '../components/field/Image/inputImg';
 
 export default class Home extends Component {
 	constructor(props) {
@@ -52,7 +52,7 @@ export default class Home extends Component {
 				</View>
 				<View style={styles.churascometro}>
 					<HeaderCategory id="1" image={Icons[1]}/>
-					<InputImage inputImg={InputImg[0]} onPress={()=>{this.props.navigation.navigate('Churrascometro')}}/>
+					<InputImage inputImg={Imagens.churrasco.url} onPress={()=>{this.props.navigation.navigate('Churrascometro')}}/>
 				</View>
             </View>
         );

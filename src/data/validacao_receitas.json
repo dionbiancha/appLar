@@ -1,0 +1,32 @@
+{
+	"produtos": [
+		{
+			"id_produto": 1,
+			"titulo": "Receita de teste",
+			"igrediente": [
+				{
+					"id_groupo": 1,
+					"titulo": "Ingredientes do recheio",
+					"descricao": [
+						"1kg disso",
+						"1g daquilo",
+						"1/2 aquele"
+					]
+				},
+				{
+					"id_groupo": 2,
+					"titulo": "Ingredientes da massa",
+					"descricao": [
+						"2kg farinha",
+						"200g para aquli",
+						"1/2 aquele"
+					]
+				}
+			],
+			"preparo": [
+				"linha1...aj osjd ashdiyhwpo diphapis ew",
+				"linha2...a~iajs dasdo ijasodh oaiushd ygsa"
+			]
+		}
+	]
+}

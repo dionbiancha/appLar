@@ -1,5 +1,5 @@
 import { createAppContainer } from 'react-navigation';
-import { createBottomTabNavigator } from 'react-navigation-tabs';
+import { createMaterialTopTabNavigator } from 'react-navigation-tabs';
 
 import Home from '../pages/Home';
 import Recipe from '../pages/Recipe';
@@ -7,7 +7,7 @@ import List from '../pages/List';
 import Search from '../pages/Search';
 import Barcode from '../pages/Barcode';
 
-const TabNavigator = createBottomTabNavigator({
+const TabNavigator = createMaterialTopTabNavigator({
   Home: {
     screen: Home,
   },
@@ -24,9 +24,17 @@ const TabNavigator = createBottomTabNavigator({
     screen: List,
   }
 }, {
+  swipeEnabled: true,
+  tabBarPosition: "bottom",
 	tabBarOptions: {
     showIcon: true,
-    showLabel: false
+    showLabel: false,
+    style: {
+      backgroundColor: '#ffffff',
+    },
+    indicatorStyle: {
+      backgroundColor: "#FC9191"
+    }
   }
 });
 

@@ -46,12 +46,12 @@ export default class Recipe extends Component {
 					<View style={styles.areaRecipe}>
 						<HeaderCategory id="4" image={Icons[4]}/>
 						<View style={styles.category}>
-							<Category id="0" img={IconsCategory[0]}/>
-							<Category id="1" img={IconsCategory[1]}/>
+							<Category id="0" img={IconsCategory[4]}/>
+							<Category id="1" img={IconsCategory[5]}/>
 						</View>
 						<View style={styles.category}>
-							<Category id="2" img={IconsCategory[2]}/>
-							<Category id="3" img={IconsCategory[3]}/>
+							<Category id="2" img={IconsCategory[6]}/>
+							<Category id="3" img={IconsCategory[7]}/>
 						</View>
 					</View>
 				</View>

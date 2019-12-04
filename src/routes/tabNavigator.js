@@ -6,6 +6,7 @@ import Recipe from '../pages/Recipe';
 import List from '../pages/List';
 import Search from '../pages/Search';
 import Barcode from '../pages/Barcode';
+
 const TabNavigator = createBottomTabNavigator({
   Home: {
     screen: Home,

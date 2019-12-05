@@ -5,6 +5,7 @@ import Login from '../pages/Login';
 import Tutorial from '../pages/Tutorial';
 import TabNavigator from './tabNavigator';
 import {Churrascometro, ChurrascometroProdutos} from '../pages/churrascometro';
+import Product from '../pages/Product';
 
 const StackNavigator = createAppContainer(
   createStackNavigator({
@@ -26,6 +27,10 @@ const StackNavigator = createAppContainer(
     },
     ChurrascometroProdutos: {
       screen: ChurrascometroProdutos,
+      navigationOptions: {header: false}
+    },
+    Product: {
+      screen: Product,
       navigationOptions: {header: false}
     }    
   })

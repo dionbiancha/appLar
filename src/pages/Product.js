@@ -6,9 +6,9 @@ import {View,
 } from 'react-native';
 
 
-export class Product extends Component {
+export default class Product extends Component {
     static navigationOptions = { 
-		title: 'Churrascomêtro',
+		title: 'Product',
 		//headerBackImage:()=>(), Recebe um componente substituto da seta de voltar
 		headerStyle: {
             backgroundColor: '#FC7C7C'

@@ -25,7 +25,12 @@ export default class Barcode extends Component {
                 onBarcodeRead={({data, type}) => {
                     // handle your scanned barcodes here!
                     // as an example, we show an alert:
-                    Alert.alert(`Barcode '${data}' of type '${type}' was scanned.`);
+                    if(data === '9788501076250') {
+                        Alert.alert(`Funcionou`);
+                    }
+                    else {
+                        Alert.alert(`Barcode '${data}' of type '${type}' was scanned.`);
+                    }
                 }}
                 onException={exceptionKey => {
                     // check instructions on Github for a more detailed overview of these exceptions.

@@ -53,6 +53,7 @@ const styles = StyleSheet.create({
 		color: '#FA2525'
 	},
 	text: {
-
+		color: '#757575',
+		fontWeight: 'bold'
 	}
 });

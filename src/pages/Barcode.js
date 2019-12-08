@@ -8,6 +8,8 @@ import {
     Image 
 } from 'react-native';
 
+import * as infoProduct from './json/products';
+
 import BarcodeScanner, 
 { Exception, FocusMode, CameraFillMode, FlashMode, BarcodeType, pauseScanner, resumeScanner } 
 from 'react-native-barcode-scanner-google';
@@ -23,13 +25,14 @@ export default class Barcode extends Component {
             <BarcodeScanner
                 style={{flex: 1}}
                 onBarcodeRead={({data, type}) => {
-                    // handle your scanned barcodes here!
-                    // as an example, we show an alert:
-                    if(data === '9788501076250') {
-                        Alert.alert(`Funcionou`);
-                    }
-                    else {
-                        Alert.alert(`Barcode '${data}' of type '${type}' was scanned.`);
+                    for(let i=-1; i++; i >=1 ){
+                        if(infoProduct.produtos[i].barcode === data )
+                        {
+                            this.props.navigation.navigate('Product',{barcode: data});
+                        }
+                        else {
+                            Alert.alert('Ops... Parece que este produto não pertence a Lar.');
+                        }
                     }
                 }}
                 onException={exceptionKey => {
@@ -53,8 +56,6 @@ export default class Barcode extends Component {
       );
     }
   }
-   
-
 const styles = StyleSheet.create({
 	IconImage: {
 		width: 26,

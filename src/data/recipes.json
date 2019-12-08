@@ -1,0 +1,20 @@
+{
+    "produtos": [{
+      "id_produto": 1,
+      "titulo": "Torta salgada de legumes",
+      "valor_energetico": "1.803kcal",
+      "peso": "100g",
+      "rendimento": "10 porções",
+      "igrediente": [{
+        "id_groupo": 1,
+        "titulo": "Ingredientes do recheio",
+        "descricao": ["1 cabeça de cebola", "100g de seleta de legumes congeladas", "Sal e pimenta a gosto"]
+      }, {
+        "id_groupo": 2,
+        "titulo": "Ingredientes da massa",
+        "descricao": ["3 ovos", "200ml de leite", "80ml de óleo", "Sal a gosto", "200g de farinha", "1 colher de fermento químico"]
+      }],
+      "preparo": ["Em uma panela refogue a cebola, acrescente a seleta de legumes e deixe refogar por 5 minutos. Acrescente o tomate, tempere com sal, pimenta e reserve. Massa: misture todos os ingredientes, menos o fermento, incorpore o recheio frio, acrescente o fermento, coloque em uma forma untada com azeite e um pouco de farinha. Leve ao forno a 180° por aproximadamente 35 minutos."]
+    }]
+  }
+

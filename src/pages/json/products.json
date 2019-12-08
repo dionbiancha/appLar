@@ -1,0 +1,20 @@
+{
+	"produtos": [
+		{
+			"id_produto": 1,
+			"titulo": "Milho em lata",
+            "barcode": "7896419701576",
+			"peso": "150 gramas",
+			"img": "",
+			"nutricional": [
+				{
+					"valor_energetico": 1,
+					"proteinas": "zero",
+					"carboidratos": "zero",
+					"gorduras_totais": "zero",
+					"açucar": "zero"
+				}
+			]
+		}
+	]
+}

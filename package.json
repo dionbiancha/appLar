@@ -11,12 +11,14 @@
     "postinstall": "jetifier -r"
   },
   "dependencies": {
+    "@types/react-native-snap-carousel": "^3.7.4",
     "react": "16.9.0",
     "react-native": "0.61.4",
     "react-native-barcode-scanner-google": "^1.4.2",
     "react-native-gesture-handler": "^1.5.1",
     "react-native-reanimated": "^1.4.0",
     "react-native-screens": "^2.0.0-alpha.17",
+    "react-native-snap-carousel": "^3.8.4",
     "react-navigation": "^4.0.10",
     "react-navigation-stack": "^1.10.3",
     "react-navigation-tabs": "^2.6.0"

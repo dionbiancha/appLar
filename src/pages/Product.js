@@ -2,10 +2,14 @@ import React, {Component} from 'react';
 import {View, 
     StyleSheet,
     Image, 
-    Text
+    Text,
+    ScrollView
 } from 'react-native';
 
+import MyCarousel from '../components/field/carousel';
+
 import * as infoProduct from './json/products';
+import { white, black } from 'ansi-colors';
 
 export default class Product extends Component {
     constructor(props) {
@@ -34,12 +38,12 @@ export default class Product extends Component {
                     s.img = p.img;
                     s.barcode = p.barcode;
 
-                    let  n = p.nutricional;
-                    s.valor_energetico = n.valor_energetico;
-                    s.proteinas = n.proteinas;
-                    s.carboidratos = n.carboidratos;
-                    s.gorduras_totais = n.gorduras_totais;
-                    s.açucar = n.açucar;
+                    let  n = infoProduct.produtos[i].nutricional;
+                    s.valor_energetico = n[i].valor_energetico;
+                    s.proteinas = n[i].proteinas;
+                    s.carboidratos = n[i].carboidratos;
+                    s.gorduras_totais = n[i].gorduras_totais;
+                    s.açucar = n[i].açucar;
 
                     this.setState(s);
                 }
@@ -58,19 +62,61 @@ export default class Product extends Component {
 	};
     render() {
         return(
-            <View style={styles.container}>
-                <View style={styles.topProduct}>
-                    <View style={styles.imageArea}>
-                        <Image source={require('../img/milho.jpg')} style={styles.imageProduct}/>
+            <ScrollView>
+                <View style={styles.container}>
+                    <View style={styles.topProduct}>
+                        <View style={styles.imageArea}>
+                            <Image source={require('../img/milho.jpg')} style={styles.imageProduct}/>
+                        </View>
+                        <View style={styles.infoTop}> 
+                            <Text style={styles.sub}>Peso</Text>
+                            <Text>{this.state.peso}</Text>
+                            <Text style={styles.sub}>Código de barras</Text>
+                            <Text>{this.state.barcode}</Text>
+                        </View>
                     </View>
-                    <View style={styles.infoTop}> 
-                        <Text style={styles.sub}>Peso</Text>
-                        <Text>{this.state.peso}</Text>
-                        <Text style={styles.sub}>Código de barras</Text>
-                        <Text>{this.state.barcode}</Text>
+                    <View style={styles.labelArea}> 
+                        <View style={styles.labelItem}> 
+                            <View style={styles.alertText}>
+                                <View style={styles.circle}></View>
+                                <Text>Valor Energético</Text>
+                            </View>
+                            <Text style={styles.subTitle}>{this.state.valor_energetico}</Text>
+                        </View>
+                        <View style={styles.labelItem}> 
+                            <View style={styles.alertText}>
+                                <View style={styles.circle}></View>
+                                <Text>Proteinas</Text>
+                            </View>
+                            <Text style={styles.subTitle}>{this.state.proteinas}</Text>
+                        </View>
+                        <View style={styles.labelItem}> 
+                            <View style={styles.alertText}>
+                                <View style={styles.circle}></View>
+                                <Text>Carboidratos</Text>
+                            </View>
+                            <Text style={styles.subTitle}>{this.state.carboidratos}</Text>
+                        </View>
+                        <View style={styles.labelItem}> 
+                            <View style={styles.alertText}>
+                                <View style={styles.circle}></View>
+                                <Text>Gorduras Totais</Text>
+                            </View>
+                            <Text style={styles.subTitle}>{this.state.gorduras_totais}</Text>
+                        </View>
+                        <View style={styles.labelItem}> 
+                            <View style={styles.alertText}>
+                                <View style={styles.circle}></View>
+                                <Text>Açucar</Text>
+                            </View>
+                            <Text style={styles.subTitle}>{this.state.açucar}</Text>
+                        </View>
+                    </View>
+                    <View style={styles.areaCarousel}>
+                        <MyCarousel />
                     </View>
                 </View>
-            </View>
+            </ScrollView>
         );
     }
 }
@@ -116,5 +162,36 @@ const styles = StyleSheet.create({
         marginBottom: 5,
         marginTop: 5,
         color: '#757575'
+    },
+    labelArea: {
+        flexDirection: 'column',
+        flex: 1,
+        width: '100%',
+    },
+    labelItem: {
+        width: '100%',
+        marginTop: 3,
+        backgroundColor: '#ffffff',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        flexDirection: 'row'
+    },
+    circle: {
+        width: 30,
+        height: 30,
+        margin: 5,
+        borderRadius: 25,
+        backgroundColor: '#82FC7C'
+    },
+    alertText: {
+        flexDirection: 'row',
+        alignItems: 'center'
+    },
+    subTitle: {
+        marginRight: 10,
+        color: '#757575'
+    },
+    areaCarousel: {
+        margin: 5
     }
 });

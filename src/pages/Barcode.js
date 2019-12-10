@@ -31,7 +31,7 @@ export default class Barcode extends Component {
                             this.props.navigation.navigate('Product',{barcode: data});
                         }
                         else {
-                            Alert.alert('Ops... Parece que este produto não pertence a Lar.');
+                            Alert.alert(`Ops...'${data}' `);
                         }
                     }
                 }}

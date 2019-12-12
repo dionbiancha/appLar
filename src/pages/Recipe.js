@@ -37,21 +37,39 @@ export default class Recipe extends Component {
 					<TopMain name=""/>
 					<View style={styles.products}>
 						<HeaderCategory id="2" image={Icons[2]}/>
-						<InputImage inputImg={Imagens.chef.url}/>
+						<InputImage 
+							inputImg={Imagens.chef.url} 
+							onPress={()=>{this.props.navigation.navigate('RecipeArea', { itemId: 0})}}
+						/>
 					</View>
 					<View style={styles.areaRecipe}>
 						<HeaderCategory id="3" image={Icons[3]}/>
-						<InputImage inputImg={Imagens.custom.url}/>
+						<InputImage 
+							inputImg={Imagens.custom.url}
+							onPress={()=>{this.props.navigation.navigate('RecipeArea', { itemId: 1})}}
+						/>
 					</View>
 					<View style={styles.areaRecipe}>
 						<HeaderCategory id="4" image={Icons[4]}/>
 						<View style={styles.category}>
-							<Category id="0" img={IconsCategory[4]}/>
-							<Category id="1" img={IconsCategory[5]}/>
+							<Category id="0" 
+								img={IconsCategory[4]}
+								onPress={()=>{this.props.navigation.navigate('CategoryArea',{idCat: 6})}}
+							/>
+							<Category id="1" 
+								img={IconsCategory[5]}
+								onPress={()=>{this.props.navigation.navigate('CategoryArea',{idCat: 6})}}
+							/>
 						</View>
 						<View style={styles.category}>
-							<Category id="2" img={IconsCategory[6]}/>
-							<Category id="3" img={IconsCategory[7]}/>
+							<Category id="2" 
+								img={IconsCategory[6]}
+								onPress={()=>{this.props.navigation.navigate('CategoryArea',{idCat: 6})}}
+							/>
+							<Category id="3" 
+								img={IconsCategory[7]}
+								onPress={()=>{this.props.navigation.navigate('CategoryArea',{idCat: 6})}}
+							/>
 						</View>
 					</View>
 				</View>

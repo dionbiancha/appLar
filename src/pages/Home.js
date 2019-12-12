@@ -42,12 +42,24 @@ export default class Home extends Component {
 				<View style={styles.products}>
 					<HeaderCategory id="0" image={Icons[0]}/>
 					<View style={styles.category}>
-						<Category id="0" img={IconsCategory[0]}/>
-						<Category id="1" img={IconsCategory[1]}/>
+						<Category id="0" 
+							img={IconsCategory[0]}
+							onPress={()=>{this.props.navigation.navigate('CategoryArea',{idCat: 5})}}
+						/>
+						<Category id="1" 
+							img={IconsCategory[1]}
+							onPress={()=>{this.props.navigation.navigate('CategoryArea',{idCat: 5})}}
+						/>
 					</View>
 					<View style={styles.category}>
-						<Category id="2" img={IconsCategory[2]}/>
-						<Category id="3" img={IconsCategory[3]}/>
+						<Category id="2" 
+							img={IconsCategory[2]}
+							onPress={()=>{this.props.navigation.navigate('CategoryArea',{idCat: 5})}}
+						/>
+						<Category id="3" 
+							img={IconsCategory[3]}
+							onPress={()=>{this.props.navigation.navigate('CategoryArea',{idCat: 5})}}
+						/>
 					</View>
 				</View>
 				<View style={styles.churascometro}>

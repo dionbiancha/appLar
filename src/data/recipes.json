@@ -8,13 +8,30 @@
       "igrediente": [{
         "id_groupo": 1,
         "titulo": "Ingredientes do recheio",
-        "descricao": ["1 cabeça de cebola", "100g de seleta de legumes congeladas", "Sal e pimenta a gosto"]
+        "descricao": [{"item":"1 cabeça de cebola"}, {"item":"100g de seleta de legumes congeladas"}, {"item":"Sal e pimenta a gosto"}]
       }, {
         "id_groupo": 2,
         "titulo": "Ingredientes da massa",
-        "descricao": ["3 ovos", "200ml de leite", "80ml de óleo", "Sal a gosto", "200g de farinha", "1 colher de fermento químico"]
+        "descricao": [{"item":"3 ovos"}, {"item":"200ml de leite"}, {"item":"80ml de óleo"}, {"item":"Sal a gosto"}, {"item":"200g de farinha"}, {"item":"1 colher de fermento químico"}]
       }],
       "preparo": ["Em uma panela refogue a cebola, acrescente a seleta de legumes e deixe refogar por 5 minutos. Acrescente o tomate, tempere com sal, pimenta e reserve. Massa: misture todos os ingredientes, menos o fermento, incorpore o recheio frio, acrescente o fermento, coloque em uma forma untada com azeite e um pouco de farinha. Leve ao forno a 180° por aproximadamente 35 minutos."]
+    },
+    {
+      "id_produto": 2,
+      "titulo": "Filé de coxa sobrecoxa com crosta de maionese e parmesão",
+      "valor_energetico": "1.474 kcal",
+      "peso": "100g",
+      "rendimento": "3 porções",
+      "igrediente": [{
+        "id_groupo": 1,
+        "titulo": "Ingredientes",
+        "descricao": [{"item":"3 unidade de coxa sobrecoxa"}, {"item":"Sal e pimenta a gosto"}, {"item":"2 dentes de alho"}, {"item":"1 colher de azeite de oliva"}]
+      }, {
+        "id_groupo": 2,
+        "titulo": "Crosta",
+        "descricao": [{"item":"3 colheres de maionese"}, {"item":"100g parmesão ralado"}]
+      }],
+      "preparo": ["Tempere a coxa e sobrecoxa com sal, pimenta, alho. Envolva o frango com a maionese e empane no parmesão, leve ao forno pré-aquecido a 180° por aproximadamente 25 minutos ou até ficarem douradas. *Sugestão: sirva com arroz de couve flor e brócolis."]
     }]
-  }
+}
 

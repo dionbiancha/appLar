@@ -30,7 +30,7 @@ export class Churrascometro extends Component {
                 <SimpleSlider name="MULHERES"/>
                 <SimpleSlider name="CRIANÇAS"/>
                 <View style={{margin: 30}}>
-                    <SimpleButton text="Continuar" bg="#3F51B5" onPress={()=>{this.props.navigation.navigate('ChurrascometroProdutos')}}/>
+                    <SimpleButton text="Continuar" bg="#007AFF" onPress={()=>{this.props.navigation.navigate('ChurrascometroProdutos')}}/>
                 </View>
             </View>
         );
@@ -58,7 +58,7 @@ export class ChurrascometroProdutos extends Component {
                     <Text style={styles.text}>O que vai servir aos convidados?</Text>
                 </View>
                 <View style={{margin: 30}}>
-                    <SimpleButton text="Continuar" bg="#3F51B5" />
+                    <SimpleButton text="Continuar" bg="#007AFF" />
                 </View>
             </View>
         );

@@ -6,6 +6,8 @@ import Tutorial from '../pages/Tutorial';
 import TabNavigator from './tabNavigator';
 import {Churrascometro, ChurrascometroProdutos} from '../pages/churrascometro';
 import Product from '../pages/Product';
+import RecipeArea from '../pages/RecipeArea';
+import CategoryArea from '../pages/CategoryArea';
 
 const StackNavigator = createAppContainer(
   createStackNavigator({
@@ -31,6 +33,14 @@ const StackNavigator = createAppContainer(
     },
     Product: {
       screen: Product,
+      navigationOptions: {header: false}
+    },
+    RecipeArea: {
+      screen: RecipeArea,
+      navigationOptions: {header: false}
+    },
+    CategoryArea: {
+      screen: CategoryArea,
       navigationOptions: {header: false}
     }    
   })

@@ -38,10 +38,28 @@
     {
     "type": "Feature",
     "properties": {
-        "ID": 3,
+        "ID": 4,
         "NAME": "Categorias",
         "INFO": "Categoria de produtos",
         "COLOR": "#97FC91"
+    }
+    },
+    {
+    "type": "Feature",
+    "properties": {
+        "ID": 5,
+        "NAME": "Destaque",
+        "INFO": "Principais Produtos",
+        "COLOR": "#FDEC92"
+    }
+    },
+    {
+    "type": "Feature",
+    "properties": {
+        "ID": 6,
+        "NAME": "Mercado",
+        "INFO": "LIstagem Completa",
+        "COLOR": "#9FA8DA"
     }
     }]
 }

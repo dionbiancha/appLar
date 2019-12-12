@@ -3,7 +3,8 @@ import {
     View,
     Text,
     Image,
-    StyleSheet
+    StyleSheet,
+    TouchableOpacity
 } from 'react-native';
 
 import * as infoData from './categoryInfo';
@@ -13,7 +14,9 @@ export default class Category extends Component {
     render(){
         return(
             <View style={[styles.areaItem, {backgroundColor: eval(json)[this.props.id].properties.COLOR}]}>
-                <Image style={styles.iconItem} source={this.props.img}/>
+                <TouchableOpacity onPress={this.props.onPress}>
+                    <Image style={styles.iconItem} source={this.props.img}/>
+                </TouchableOpacity>
             </View>           
         );
     }

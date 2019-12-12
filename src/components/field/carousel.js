@@ -9,7 +9,6 @@ import {View,
 
 import Carousel, { ParallaxImage } from 'react-native-snap-carousel';
 
-
 const { width: screenWidth } = Dimensions.get('window')
 
 export default class MyCarousel extends Component {
@@ -17,9 +16,15 @@ export default class MyCarousel extends Component {
         super()
         this.state = {
           entries: [
-              { title: 'hello' },
-              { title: 'world' },
-              { title: 'teste' },
+              { title: 'Frango com molho',
+              thumbnail: require('../../img/frango-molho.jpg')
+            },
+            { title: 'Lasanha Cremosa',
+              thumbnail: require('../../img/lasanha.jpg')
+            },
+            { title: 'Risoto da vovó',
+              thumbnail: require('../../img/risoto.jpg')
+            }
             ]
         }
       }
@@ -27,15 +32,12 @@ export default class MyCarousel extends Component {
         return (
             <View style={styles.item}>
                 <ParallaxImage
-                    source={{ uri: item.thumbnail }}
+                    source={item.thumbnail}
                     containerStyle={styles.imageContainer}
                     style={styles.image}
                     parallaxFactor={0.4}
                     {...parallaxProps}
                 />
-                <Text style={styles.title} numberOfLines={2}>
-                    { item.title }
-                </Text>
             </View>
         );
     }
@@ -43,9 +45,9 @@ export default class MyCarousel extends Component {
     render () {
         return (
             <Carousel
-                sliderWidth={350}
+                sliderWidth={360}
                 sliderHeight={150}
-                itemWidth={250}
+                itemWidth={200}
                 data={this.state.entries}
                 renderItem={this._renderItem}
                 hasParallaxImages={true}
@@ -56,8 +58,8 @@ export default class MyCarousel extends Component {
 
 const styles = StyleSheet.create({
   item: {
-    width: 250,
-    height: 200,
+    width: 200,
+    height: 150,
   },
   imageContainer: {
     flex: 1,
@@ -68,5 +70,6 @@ const styles = StyleSheet.create({
   image: {
     ...StyleSheet.absoluteFillObject,
     resizeMode: 'cover',
-  },
-})
+  }
+});
+

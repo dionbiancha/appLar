@@ -6,11 +6,13 @@ import {
     Text ,
     Image
 } from 'react-native';
-
+import { PermissionsAndroid } from 'react-native';
 
 export default class Login extends Component {
 
   render () {
+    requestCameraPermission();
+    
     return (
       <View style={styles.container}>
         <View style={styles.textArea}>
@@ -38,6 +40,24 @@ export default class Login extends Component {
     );
   }
 }
+
+async function requestCameraPermission() {
+  try {
+    await PermissionsAndroid.request(
+      PermissionsAndroid.PERMISSIONS.CAMERA,
+      {
+        title: 'La Receita Permissão para utilizar câmera.',
+        message: 'Precisamos do acesso a sua câmera para ler código de barras',
+        buttonNeutral: 'Pergunte-me depois',
+        buttonNegative: 'Cancelar',
+        buttonPositive: 'OK',
+      },
+    );
+  } catch (err) {
+    console.warn(err);
+  }
+}
+
 
 const styles = StyleSheet.create({
     container: {

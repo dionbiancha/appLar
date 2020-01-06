@@ -7,6 +7,7 @@ import {
     Alert, 
     Image 
 } from 'react-native';
+import { JsonValidacao } from '../data/receitas';
 
 import BarcodeScanner, 
 { Exception, FocusMode, CameraFillMode, FlashMode, BarcodeType, pauseScanner, resumeScanner } 
@@ -23,24 +24,27 @@ export default class Barcode extends Component {
             <BarcodeScanner
                 style={{flex: 1}}
                 onBarcodeRead={({data, type}) => {
-                    // handle your scanned barcodes here!
-                    // as an example, we show an alert:
-                    if(data === '9788501076250') {
-                        Alert.alert(`Funcionou`);
-                    }
-                    else {
-                        Alert.alert(`Barcode '${data}' of type '${type}' was scanned.`);
-                    }
+                    console.log("Teste");
+                    const r = new JsonValidacao();
+                    
+                    r.fetchData(data, type)
+                    .then(product => {
+                        if(!product) {
+                            Alert.alert("Produto não encontrado");
+                            return;
+                        }
+                        Alert.alert("Produto", JSON.stringify(product));
+                    })
+                    .catch(error => {
+                        Alert.alert("erro", "Não foi possível verificar o código.");
+                    })
                 }}
+
                 onException={exceptionKey => {
-                    // check instructions on Github for a more detailed overview of these exceptions.
                     switch (exceptionKey) {
                         case Exception.NO_PLAY_SERVICES:
-                            // tell the user they need to update Google Play Services
                         case Exception.LOW_STORAGE:
-                            // tell the user their device doesn't have enough storage to fit the barcode scanning magic
                         case Exception.NOT_OPERATIONAL:
-                            // Google's barcode magic is being downloaded, but is not yet operational.
                         default: break;
                     }
                 }}

@@ -10,7 +10,7 @@ export default class InputImage extends Component {
     render(){
         return(
             <View style={styles.areaItem}>
-                <TouchableOpacity onPress={this.props.onPress}>
+                <TouchableOpacity onPress={this.props.onPress} activeOpacity={0.7}>
                     <Image style={styles.imageItem} source={this.props.inputImg}/>
                 </TouchableOpacity>
             </View>        

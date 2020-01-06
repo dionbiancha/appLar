@@ -38,7 +38,7 @@ export default class Home extends Component {
     render(){
         return(
             <View style={styles.container}>
-                <TopMain name={"Bem Vindo "+this.state.name}/>
+                <TopMain name={"Bem Vindo "+ this.state.name }/>
 				<View style={styles.products}>
 					<HeaderCategory id="0" image={Icons[0]}/>
 					<View style={styles.category}>
@@ -52,7 +52,9 @@ export default class Home extends Component {
 				</View>
 				<View style={styles.churascometro}>
 					<HeaderCategory id="1" image={Icons[1]}/>
-					<InputImage inputImg={Imagens.churrasco.url} onPress={()=>{this.props.navigation.navigate('Churrascometro')}}/>
+					<InputImage 
+						inputImg={ Imagens.churrasco.url } 
+						onPress={ ()=>{ this.props.navigation.navigate('Churrascometro') } }/>
 				</View>
             </View>
         );

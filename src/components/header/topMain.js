@@ -22,7 +22,7 @@ export default class TopMain extends Component {
 						<Text style={styles.title}>La Receita</Text>
 					</View>
                     <Text style={styles.text}>
-                       {this.props.name}
+                       { this.props.name }
                     </Text>
 				</View>
             </View>

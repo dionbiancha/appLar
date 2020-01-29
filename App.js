@@ -1,8 +1,8 @@
 import React from 'react';
 
-import StackNavigator from './src/routes/stackNavigator';
+import Container from './src/routes/stackNavigator';
 
-const App = () => <StackNavigator />
+const App = () => <Container />
 
 export default App; 
 

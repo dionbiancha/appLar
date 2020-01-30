@@ -26,7 +26,9 @@ export default class List extends Component {
     render(){
         return(
             <View style={styles.container}>
-                <TopMain name=""/>
+				<View style={styles.topMain}>
+					<TopMain name=""/>
+				</View>  
 				<CustomList />
             </View>
         );
@@ -40,7 +42,9 @@ const styles = StyleSheet.create({
 	},
 	container: {
 		height: 780,
-		flexDirection: 'column',
+		flexDirection: 'column'
+	},
+	topMain: {
 		margin: 10
 	}
 });

@@ -1,8 +1,8 @@
-export const customList = (name) => {
+export const customList = (customListBuy) => {
     return {
         type: 'customList',
         payload: {
-            name: name
+            customListBuy: customListBuy
         }
     }
 };

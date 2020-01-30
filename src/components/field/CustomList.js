@@ -6,11 +6,14 @@ import { customList } from '../../actions/AuthActions';
 import CustomListItem from './CustomListItem';
 
 export class CustomListArea extends Component {
+    
     render() {
         return(
             <View style={styles.container}>
-                <Text>{this.props.name}</Text>
-                <Text>Teste</Text>
+                <FlatList
+                    data={this.props.customListBuy}
+                    renderItem={({item}) => <CustomListItem data={item}/>}
+                />
             </View>
         );
     }
@@ -18,7 +21,7 @@ export class CustomListArea extends Component {
 
 const mapStateToProps = (state) => {
     return {
-        name: state.auth.name
+        customListBuy: state.auth.customListBuy
     };
 };
 
@@ -28,6 +31,6 @@ export default CustomList;
 
 const styles = StyleSheet.create({
     container: {
-
+        
     }
 });

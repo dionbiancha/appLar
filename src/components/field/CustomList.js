@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, Text, StyleSheet, FlatList } from 'react-native';
+import { View, StyleSheet, FlatList, ScrollView } from 'react-native';
 import { connect } from 'react-redux';
 
 import { customList } from '../../actions/AuthActions';
@@ -9,12 +9,14 @@ export class CustomListArea extends Component {
     
     render() {
         return(
-            <View style={styles.container}>
-                <FlatList
-                    data={this.props.customListBuy}
-                    renderItem={({item}) => <CustomListItem data={item}/>}
-                />
-            </View>
+            <ScrollView>
+                <View style={styles.container}>
+                    <FlatList
+                        data={this.props.customListBuy}
+                        renderItem={({item}) => <CustomListItem data={item}/>}
+                    />
+                </View>
+            </ScrollView>
         );
     }
 }

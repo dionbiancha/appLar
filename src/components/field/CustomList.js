@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { View, StyleSheet, FlatList, ScrollView } from 'react-native';
 import { connect } from 'react-redux';
 
-import { customList } from '../../actions/AuthActions';
+import { customList } from '../../actions/BuyListActions';
 import CustomListItem from './CustomListItem';
 
 export class CustomListArea extends Component {
@@ -14,6 +14,7 @@ export class CustomListArea extends Component {
                     <FlatList
                         data={this.props.customListBuy}
                         renderItem={({item}) => <CustomListItem data={item}/>}
+                        extraData={this.props.change}
                     />
                 </View>
             </ScrollView>
@@ -23,7 +24,7 @@ export class CustomListArea extends Component {
 
 const mapStateToProps = (state) => {
     return {
-        customListBuy: state.auth.customListBuy
+        customListBuy: state.customList.customListBuy
     };
 };
 

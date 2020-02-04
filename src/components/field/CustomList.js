@@ -13,7 +13,7 @@ export class CustomListArea extends Component {
                 <View style={styles.container}>
                     <FlatList
                         data={this.props.customListBuy}
-                        renderItem={({item}) => <CustomListItem data={item}/>}
+                        renderItem={({item}) => <CustomListItem navigation= {this.props.navigation} data={item}/>}
                         extraData={this.props.change}
                     />
                 </View>

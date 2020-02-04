@@ -5,7 +5,7 @@ export default class CustomListItem extends Component {
     render() {
         return(
             <View style={styles.container}>
-                <TouchableOpacity style={styles.listArea}>
+                <TouchableOpacity style={styles.listArea} onPress={()=>{ this.props.navigation.navigate('ListItem', {key: this.props.data.key}) }}>
                     <View style={styles.textArea}>
                         <Text style={styles.title}>{this.props.data.title}</Text>
                         <Text style={styles.description}>{this.props.data.description}</Text>

@@ -85,7 +85,7 @@ export class ListArea extends Component {
 						<Image style={styles.iconMore} source={require('../icons/moreGray.png')}/>
 					</TouchableOpacity>
 				</View>  
-				<CustomList change={this.state}/>
+				<CustomList change={this.state} navigation= {this.props.navigation} />
 				<Modal animationType="fade" visible={this.state.modalVisible}>
 					<View style={styles.modal} > 
 						<Text style={styles.textTop}>Criar nova lista</Text>

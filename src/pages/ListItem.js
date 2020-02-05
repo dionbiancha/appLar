@@ -3,6 +3,7 @@ import {
     View,
     Text
 } from 'react-native';
+import { connect } from 'react-redux';
 export class ListItem extends Component {
     render() {
         return(

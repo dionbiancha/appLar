@@ -4,21 +4,27 @@ const initialState = {
 };
 
 const CustomListReducer = (state = initialState, action) => {
-    
-    if(action.type == 'customList')({
-        ...state,
-        customListBuy: action.payload.customListBuy
-    })
+    switch (action.type) {
+        case 'customList':
+            return {
+                ...state,
+                customListBuy: action.payload.customListBuy
+            }
+        case 'newCustomList':
+            return {
+                ...state,
+                customListBuy: action.payload.customListBuy
+            }
 
-    if(action.type == 'newCustomList')({
-        ...state,
-        customListBuy: action.payload.customListBuy
-    })
-
-    if(action.type === 'SET_KEY')({
-        ...state,
-        key: action.key
-    })
+        case 'SET_KEY':
+            return {
+                ...state,
+                customListBuy: CustomListReducer.action.payload.customListBuy,
+                key: action.key
+            }
+        default:
+            state;
+    }
 
     return state;
 };

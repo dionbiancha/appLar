@@ -3,12 +3,21 @@ import {
     View,
     Text
 } from 'react-native';
-export default class ListItem extends Component {
+export class ListItem extends Component {
     render() {
         return(
         <View>
-            <Text>{this.props.navigation.state.params.key}</Text>
+            <Text>{this.props.key}</Text>
         </View>
         );
     }
 }
+
+const mapStateToProps = state => ({
+    key: state.CustomListReducer.key
+})
+
+export default connect(
+    mapStateToProps,
+    null
+)(ListItem)

@@ -1,3 +1,5 @@
+export const NEW_NAVIGATOR = 'NEW_NAVIGATOR'
+
 export const customList = (customListBuy) => {
     return {
         type: 'customList',
@@ -15,3 +17,8 @@ export const newCustomList = (customListBuy) => {
         }
     };
 };
+
+export const setKey = key => ({
+    type: 'SET_KEY',
+    key
+})

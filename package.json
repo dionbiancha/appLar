@@ -11,8 +11,9 @@
     "postinstall": "jetifier -r"
   },
   "dependencies": {
+    "ramda": "0.26.1",
     "react": "16.9.0",
-    "react-native": "0.61.4",
+    "react-native": "^0.61.4",
     "react-native-barcode-scanner-google": "^1.4.2",
     "react-native-gesture-handler": "^1.5.1",
     "react-native-reanimated": "^1.4.0",

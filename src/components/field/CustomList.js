@@ -6,14 +6,14 @@ import { customList } from '../../actions/BuyListActions';
 import CustomListItem from './CustomListItem';
 
 export class CustomListArea extends Component {
-    
+
     render() {
-        return(
+        return (
             <ScrollView>
                 <View style={styles.container}>
                     <FlatList
                         data={this.props.customListBuy}
-                        renderItem={({item}) => <CustomListItem navigation= {this.props.navigation} data={item}/>}
+                        renderItem={({ item }) => <CustomListItem navigation={this.props.navigation} data={item} />}
                         extraData={this.props.change}
                     />
                 </View>
@@ -28,12 +28,12 @@ const mapStateToProps = (state) => {
     };
 };
 
-const CustomList = connect(mapStateToProps, {customList})(CustomListArea);
+const CustomList = connect(mapStateToProps, { customList })(CustomListArea);
 
 export default CustomList;
 
 const styles = StyleSheet.create({
     container: {
-        
+
     }
 });

@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import {
     View,
     Image,
@@ -7,13 +7,13 @@ import {
 } from 'react-native';
 
 export default class InputImage extends Component {
-    render(){
-        return(
+    render() {
+        return (
             <View style={styles.areaItem}>
                 <TouchableOpacity onPress={this.props.onPress} activeOpacity={0.7}>
-                    <Image style={styles.imageItem} source={this.props.inputImg}/>
+                    <Image style={styles.imageItem} source={this.props.inputImg} />
                 </TouchableOpacity>
-            </View>        
+            </View>
         );
     }
 }
@@ -22,7 +22,7 @@ const styles = StyleSheet.create({
     areaItem: {
         flex: 3,
         marginBottom: 10
-        
+
     },
     imageItem: {
         width: '100%',

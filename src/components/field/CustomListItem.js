@@ -12,23 +12,23 @@ export class CustomListItem extends Component {
 
 
     render() {
-        return(
+        return (
             <View style={styles.container}>
-                <TouchableOpacity style={styles.listArea} onPress={()=>{ this.openListItem(this.props.data.key) }}>
+                <TouchableOpacity style={styles.listArea} onPress={() => { this.openListItem(this.props.data.key) }}>
                     <View style={styles.textArea}>
                         <Text style={styles.title}>{this.props.data.title}</Text>
                         <Text style={styles.description}>{this.props.data.description}</Text>
                     </View>
                     <View style={styles.iconsArea}>
-                        <View style={{flexDirection: 'row', alignItems: 'center'}}>
-                            <Image style={styles.icon} source={require('../../icons/totalItens.png')}/>
+                        <View style={{ flexDirection: 'row', alignItems: 'center' }}>
+                            <Image style={styles.icon} source={require('../../icons/totalItens.png')} />
                             <Text style={styles.textIcon}>Itens: {this.props.data.totalItens}</Text>
                         </View>
-                        <View style={{flexDirection: 'row', alignItems: 'center'}}>
-                            <Image style={styles.icon} source={require('../../icons/scratched.png')}/>
+                        <View style={{ flexDirection: 'row', alignItems: 'center' }}>
+                            <Image style={styles.icon} source={require('../../icons/scratched.png')} />
                             <Text style={styles.textIcon}>Riscados: {this.props.data.scratched}</Text>
                         </View>
-                        
+
                     </View>
                 </TouchableOpacity>
             </View>
@@ -49,7 +49,7 @@ const styles = StyleSheet.create({
         paddingBottom: 20,
         paddingRight: 10,
         paddingTop: 20
-        
+
     },
     textArea: {
 

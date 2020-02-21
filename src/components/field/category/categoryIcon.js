@@ -1,4 +1,4 @@
-export default IconsCategory={
+export default IconsCategory = {
     "0": require("../../../icons/porcoIcon.png"),
     "1": require("../../../icons/enlatadoIcon.png"),
     "2": require("../../../icons/galinhaIcon.png"),

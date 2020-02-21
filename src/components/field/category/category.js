@@ -1,20 +1,17 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import {
     View,
-    Text,
     Image,
     StyleSheet
 } from 'react-native';
-
-import * as infoData from './categoryInfo';
 const json = 'infoData.features';
 
 export default class Category extends Component {
-    render(){
-        return(
-            <View style={[styles.areaItem, {backgroundColor: eval(json)[this.props.id].properties.COLOR}]}>
-                <Image style={styles.iconItem} source={this.props.img}/>
-            </View>           
+    render() {
+        return (
+            <View style={[styles.areaItem, { backgroundColor: eval(json)[this.props.id].properties.COLOR }]}>
+                <Image style={styles.iconItem} source={this.props.img} />
+            </View>
         );
     }
 }

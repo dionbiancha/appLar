@@ -1,21 +1,21 @@
-import React,{Component} from 'react';
+import React, { Component } from 'react';
 import {
     TouchableOpacity,
-    StyleSheet, 
+    StyleSheet,
     Text
 } from 'react-native';
 
 
 class SimpleButton extends Component {
-    constructor(props){
+    constructor(props) {
         super(props);
         this.state = {};
     }
 
-    render(){
-        return(
-            <TouchableOpacity style={[styles.button, {backgroundColor: this.props.bg}]} 
-            onPress={this.props.onPress}
+    render() {
+        return (
+            <TouchableOpacity style={[styles.button, { backgroundColor: this.props.bg }]}
+                onPress={this.props.onPress}
             >
                 <Text style={styles.textButton}>{this.props.text}</Text>
             </TouchableOpacity>

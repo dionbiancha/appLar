@@ -4,10 +4,12 @@ import {
     Image,
     StyleSheet
 } from 'react-native';
-const json = 'infoData.features';
+import * as infoData from './categoryInfo'
 
 export default class Category extends Component {
     render() {
+        
+        const json = infoData.features;
         return (
             <View style={[styles.areaItem, { backgroundColor: eval(json)[this.props.id].properties.COLOR }]}>
                 <Image style={styles.iconItem} source={this.props.img} />

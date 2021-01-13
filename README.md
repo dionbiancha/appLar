@@ -38,10 +38,11 @@
 
 This application was developed for academic purposes at  [Uniamérica](https://uniamerica.br/) with the following technologies: 
 
--  [ReactJS](https://reactjs.org/)
+-  [React.JS](https://reactjs.org/)
+-  [React Native](https://reactnative.dev/)
 -  [Redux](https://redux.js.org/)
--  [styled-components](https://www.styled-components.com/)
--  [React-Icons](https://react-icons.netlify.com/)
+-  [Styled Components](https://www.styled-components.com/)
+-  [React Icons](https://react-icons.netlify.com/)
 -  [Android Studio](https://developer.android.com/studio/)
 -  [VS Code][vc] 
 

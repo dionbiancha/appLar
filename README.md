@@ -68,7 +68,8 @@ This project is under the MIT license. See the [LICENSE](https://github.com/dion
 
 ---
 
-Made with :heartpulse: by [Dionei Bianchati ](https://www.linkedin.com/in/dionbiancha/), [Jonas Farias](https://www.linkedin.com/in/jonas-farias-peretiatko-4a13a0143/), [Alan Nascimento](https://www.linkedin.com/in/alan-jbdn/)
+Made with :heartpulse: by [Dionei Bianchati ](https://www.linkedin.com/in/dionbiancha/), [Jonas Farias](https://www.linkedin.com/in/jonas-farias-peretiatko-4a13a0143/), [Alan Nascimento](https://www.linkedin.com/in/alan-jbdn/) and [Dionatã Savi
+](https://www.linkedin.com/in/dionat%C3%A3-savi-49843a187/)
 
 [androidstudio]: https://developer.android.com/studio/
 [nodejs]: https://nodejs.org/

@@ -1,5 +1,5 @@
 <h1 align="center">
-      <img alt="La Receita" src="https://res.cloudinary.com/dionbiancha/image/upload/v1610498052/github/la-receita_euou7h.png" />
+      <img alt="La Receita" src="https://res.cloudinary.com/dionbiancha/image/upload/v1610935986/github/marca_lar_desc-55_ef3tba.png" />
     <br>
     La Receita
 </h1>

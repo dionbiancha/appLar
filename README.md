@@ -1,11 +1,11 @@
 <h1 align="center">
-      <img alt="La Receita" src="https://res.cloudinary.com/dionbiancha/image/upload/v1610935986/github/marca_lar_desc-55_ef3tba.png" />
+      <img alt="La Receita" src="https://res.cloudinary.com/dionbiancha/image/upload/v1612270131/github/maxresdefault_px192d.jpg" />
     <br>
     La Receita
 </h1>
 
 <h4 align="center">
-  Lar Cooperativa Agroindustrial revenue application.
+      Lar Cooperativa Agroindustrial revenue application developed in partnership with Uniamérica.
 </h4>
 <p align="center">
   <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/dionbiancha/appLar.svg">
